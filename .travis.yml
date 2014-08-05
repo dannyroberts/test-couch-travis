@@ -1,0 +1,8 @@
+language: python
+python:
+ - "2.7"
+install:
+ - "bash -ex .travis/upgrade-couchdb.sh | ts"
+script: "curl http://localhost:5984/"
+services:
+ - couchdb
