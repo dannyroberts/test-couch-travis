@@ -10,6 +10,6 @@ install:
  - "sudo service couchdb status"
  - "sleep 3"
  - "sudo service couchdb status"
-script: "curl http://localhost:5984/"
+script: "curl http://127.0.0.1:5984/"
 services:
  - couchdb
